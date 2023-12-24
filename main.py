@@ -129,11 +129,11 @@ def productt(m):
             pass
 
 
-@bot.message_handler(func=lambda m: m.from_user.id ==2082216862 )
-def syah(m):
-    group_id = m.chat.id
-    cid=m.from_user.id
-    bot.send_message(group_id,"اوووووف جوووون سفید مفید تو فقط پیام بده من رباتم شق کردم",reply_to_message_id=m.message_id)
+# @bot.message_handler(func=lambda m: m.from_user.id ==2082216862 )
+# def syah(m):
+#     group_id = m.chat.id
+#     cid=m.from_user.id
+#     bot.send_message(group_id,"اوووووف جوووون سفید مفید تو فقط پیام بده من رباتم شق کردم",reply_to_message_id=m.message_id)
 @bot.message_handler(func=lambda m: m.chat.type == 'group' or m.chat.type == 'supergroup' and m.text=="درباره ما")
 def abaut(m):
     group_id = m.chat.id
